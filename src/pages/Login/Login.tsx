@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormBox, MainBox, MainSection } from './Login.style';
+import { Button, FormBox, Img, Input, Link, MainSection } from './Login.style';
 
 const Login: React.FC = () => {
     const [username, setUsername] = useState('');
@@ -14,24 +14,25 @@ const Login: React.FC = () => {
     return (
         <>
         <MainSection>
-            <MainBox>
-                <h2>Login</h2>
+            
                 <FormBox onSubmit={handleLogin}>
-                    <label>
-                        Nome de usuário:
-                        <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-                    </label>
-                    <label>
-                        Senha:
-                        <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-                    </label>
-                    <button type="submit">Fazer Login</button>
+
+                    <Img src="https://login.salesforce.com/img/logo214.svg" alt="Logo da empresa" />
+
+                    <label>Nome de usuário:</label>
+                    <Input type="text" value={username} onChange={e => setUsername(e.target.value)} />
+                    
+                    <label>Senha:</label>
+                    <Input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+                    
+                    <Button type="submit">Fazer Login</Button>
+
+                    <div>
+                        <p>Não é um cliente? <Link>Teste gratuitamente</Link></p>
+                    </div>
+
                 </FormBox>
-                <div>
-                    <p>Não é um cliente?</p>
-                    <button>Teste gratuitamente</button>
-                </div>
-            </MainBox>
+            
         </MainSection>
         </>
     );
