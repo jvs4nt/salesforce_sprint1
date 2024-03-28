@@ -1,24 +1,35 @@
 import React from 'react';
-import { NavbarStyle, Options } from './Navbar.style';
+import { Img, Link, NavbarStyle, Options } from './Navbar.style';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
+    const navigate = useNavigate();
+
+    function handleLogin() {
+        navigate('/login');
+    }
+
     return (
-        <NavbarStyle className="navbar">
-            <Options className="navbar-nav">
-                <li className="nav-item">
-                    <a href="/" className="nav-link">Home</a>
-                </li>
-                <li className="nav-item">
-                    <a href="/about" className="nav-link">About</a>
-                </li>
-                <li className="nav-item">
-                    <a href="/contact" className="nav-link">Contact</a>
-                </li>
-                <li className="nav-item">
-                    <a href="/login" className="nav-link">Sair</a>
-                </li>
-            </Options>
-        </NavbarStyle>
+            <NavbarStyle className="navbar">
+                <div>
+                <Img src="https://login.salesforce.com/img/logo214.svg" alt="Logo da empresa" />
+                </div>
+                <div>
+                <Options className="navbar-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={handleLogin} className="nav-link">Equipe</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={handleLogin} className="nav-link">Sair</Link>
+                    </li>
+                </Options>
+                </div>
+                
+            </NavbarStyle>
+        
     );
 }
 
