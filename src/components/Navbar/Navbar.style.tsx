@@ -9,7 +9,8 @@ export const NavbarStyle = styled.div`
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding: 5px 40px;
     border-bottom: 3px solid #00A1E0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    height: 6vh;
 `;
 
 export const Options = styled.nav`
@@ -21,17 +22,13 @@ export const Options = styled.nav`
 
 export const Link = styled.a`
     text-decoration: none;
-    color: #516e82;
     cursor: pointer;
-
-    &:hover {
-        color: #077bf7;
-        text-decoration: underline;
-    }
+    color: #000;
+    font-weight: 600;
 `;
 
 export const Img = styled.img`
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.5rem;
+    margin-top: 5px;
 
 `;
