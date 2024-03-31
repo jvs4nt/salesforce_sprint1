@@ -8,6 +8,8 @@ export const NavbarStyle = styled.div`
     background-color: #f7f9fa;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding: 5px 40px;
+    border-bottom: 3px solid #00A1E0;
+    font-size: 1.2rem;
 `;
 
 export const Options = styled.nav`
@@ -29,7 +31,7 @@ export const Link = styled.a`
 `;
 
 export const Img = styled.img`
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
 
 `;
