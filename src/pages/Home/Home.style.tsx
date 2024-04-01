@@ -3,8 +3,12 @@ import { styled } from "styled-components";
 export const MainSection = styled.div`
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    min-height: 120vh;
     background-color: white;
+
+    @media (max-width: 768px) {
+        min-height: 150vh;
+    }
 `;
 
 export const MainBox = styled.div`
@@ -12,6 +16,11 @@ export const MainBox = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Img = styled.img`
@@ -19,6 +28,10 @@ export const Img = styled.img`
     margin-bottom: 20px;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const Box1 = styled.div`
@@ -33,6 +46,10 @@ export const Box1 = styled.div`
         font-family: 'Roboto', sans-serif;
         color: #032D60;
         margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
     }
 `;
 
@@ -83,6 +100,12 @@ export const SecondaryBox = styled.div`
     display: flex;
     margin: 0 auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Card = styled.div`
@@ -98,6 +121,10 @@ export const Card = styled.div`
 
     &:hover {
         border: 1px solid #0176D3;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
     }
 `;
 
