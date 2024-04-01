@@ -29,6 +29,11 @@ export const FormBox = styled.form`
     border-radius: 10px;
     border: 1px solid #d0d8db;
     margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        min-height: 400px;
+    }
 `;
 
 export const Input = styled.input`
