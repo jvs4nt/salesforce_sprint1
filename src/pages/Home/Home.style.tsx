@@ -3,19 +3,19 @@ import { styled } from "styled-components";
 export const MainSection = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 95vh;
     background-color: white;
 `;
 
 export const MainBox = styled.div`
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5rem;
 `;
 
 export const Img = styled.img`
-    width: 14rem;
-    height: 14rem;
+    width: 100%;
     margin-bottom: 20px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -23,6 +23,7 @@ export const Img = styled.img`
 
 export const Box1 = styled.div`
     display: flex;
+    width: 50%;
     flex-direction: column;
     text-align: left;
     margin-bottom: 20px;
@@ -35,10 +36,15 @@ export const Box1 = styled.div`
     }
 `;
 
+export const Box2 = styled.div`
+    width: 40%;
+`;
+
 export const ButtonDiv = styled.div`
     display: flex;
     width: 80%;
     gap: 20px;
+    margin-top: 20px;
 `;
 
 export const Button = styled.button`
@@ -71,4 +77,11 @@ export const SecButton = styled.button`
     &:hover {
         background-color: #fff;
     }
+`;
+
+export const SecondaryBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5rem;
 `;

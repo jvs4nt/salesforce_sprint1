@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Box1, Button, ButtonDiv, Img, MainBox, MainSection, SecButton } from './Home.style';
+import { Box1, Box2, Button, ButtonDiv, Img, MainBox, MainSection, SecButton } from './Home.style';
 
 const Home: React.FC = () => {
     return (
@@ -14,15 +14,14 @@ const Home: React.FC = () => {
                     <h1>um cliente Salesforce</h1>
                     <p>Atendemos todos os serviços de CRM com suporte 24h e um teste</p>
                     <p>grátis para garantir a qualidade sem se arrepender de nada!</p>
-                </Box1>
-                
                 <ButtonDiv>
                     <Button>Faça o teste grátis</Button>
                     <SecButton>Saiba mais</SecButton>
                 </ButtonDiv>  
-
-                <Img src="https://login.salesforce.com/img/logo214.svg" alt="Logo da empresa" />
-                
+                </Box1>
+                <Box2>
+                    <Img src="https://i.ibb.co/VgLY7pt/Salesforce1.png" alt="Logo da empresa" />
+                </Box2>
             </MainBox>
         </MainSection>
         </>
