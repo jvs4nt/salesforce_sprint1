@@ -5,6 +5,7 @@ export const MainSection = styled.div`
     flex-direction: column;
     min-height: 120vh;
     background-color: white;
+    font-family: 'Roboto', sans-serif;
 
     @media (max-width: 768px) {
         min-height: 150vh;

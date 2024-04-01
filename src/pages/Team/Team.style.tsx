@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const MainSection = styled.div`
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
     height: 95vh;
     background-color: white;
     align-items: center;

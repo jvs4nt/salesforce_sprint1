@@ -4,6 +4,7 @@ export const MainSection = styled.div`
     min-height: 110vh;
     width: 100vw;
     background-color: #f7f9fa;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
