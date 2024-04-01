@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import { Card, CardBox, CardImage, CardRM, CardText, MainBox, MainSection, MainText } from './Team.style';
 import profile from './../../assets/profile-pic.jpeg';
 import profileWill from './../../assets/profilewill.jpeg'
-import profileRyan from './../../assets/profileRyan.jpeg'
+import profileRyan from './../../assets/profileryan.jpeg'
 
 const Team: React.FC = () => {
     return (

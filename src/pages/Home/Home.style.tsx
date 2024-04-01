@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const MainSection = styled.div`
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    height: 120vh;
     background-color: white;
 `;
 
