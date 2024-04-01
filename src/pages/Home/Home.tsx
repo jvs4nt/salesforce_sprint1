@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Img, MainBox, MainSection, SecButton, SecondaryBox } from './Home.style';
+import card1 from './../../assets/card1.png';
+import card3 from './../../assets/card3.png';
 
 const Home: React.FC = () => {
     return (
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
             </MainBox>
             <SecondaryBox>
                 <Card>
-                    <CardImage src='https://i.ibb.co/DthS4fF/Link-Fortalec-a-a-empresa-do-seu-cliente-com-dados-unificados-e-em-tempo-real-data-cloud-card-png.png'/>
+                    <CardImage src={card1}/>
                     <CardBox>
                         <CardText>Temos diversos produtos disponíveis para atender suas necessidades</CardText>
                         <CardLink>Conheça os produtos</CardLink>
@@ -39,7 +41,7 @@ const Home: React.FC = () => {
                     </CardBox>
                 </Card>
                 <Card>
-                    <CardImage src='https://i.ibb.co/WBZg8y6/Link-Marketing-no-Whats-App-O-que-e-e-como-integrar-a-sua-estrate-gia-de-marketing-digital-php-mk-wh.png'/>
+                    <CardImage src={card3}/>
                     <CardBox>
                         <CardText>Tiramos todas as suas dúvidas através do nosso contato 24h</CardText>
                         <CardLink>Entre em contato conosco</CardLink>

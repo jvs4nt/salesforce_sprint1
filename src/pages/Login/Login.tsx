@@ -18,8 +18,6 @@ const Login: React.FC = () => {
         navigate('/home');
     }
 
-    
-
     return (
         <>
         <MainSection>

@@ -102,7 +102,7 @@ export const CardBox = styled.div`
 
 export const CardImage = styled.img`
     width: 100%;
-    margin-bottom: 20px;
+    rounded: 0px;
 `;
 
 export const CardText = styled.p`

@@ -13,6 +13,10 @@ const Navbar: React.FC = () => {
         navigate('/team');
     }
 
+    function handleHome() {
+        navigate('/home');
+    }
+
     return (
             <NavbarStyle className="navbar">
                 <div>
@@ -21,7 +25,7 @@ const Navbar: React.FC = () => {
                 <div>
                 <Options className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link">Home</Link>
+                        <Link onClick={handleHome} className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link onClick={handleTeam} className="nav-link">Equipe</Link>
