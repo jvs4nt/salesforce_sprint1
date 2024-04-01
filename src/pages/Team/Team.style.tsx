@@ -12,6 +12,10 @@ export const MainBox = styled.div`
     display: flex;
     background-color: white;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const MainText = styled.h1`
