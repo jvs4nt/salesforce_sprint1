@@ -16,10 +16,12 @@ export const MainBox = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 5rem;
+    margin-left: 5rem;
 
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
 `;
 

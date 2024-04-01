@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const MainSection = styled.div`
-    height: 100vh;
+    min-height: 110vh;
     width: 100vw;
     background-color: #f7f9fa;
     display: flex;
