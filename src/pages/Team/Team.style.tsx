@@ -32,6 +32,11 @@ export const Card = styled.div`
     margin: 0 auto;
     margin-top: 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    &:hover {
+        border: 1px solid #0176D3;
+    }
 `;
 
 export const CardBox = styled.div`
@@ -48,6 +53,11 @@ export const CardImage = styled.img`
     margin-bottom: 20px;
     border-radius: 10%;
     border: 5px solid #d0d8db;
+    transition: 0.3s;
+
+    &:hover {
+        border: 2px solid #0176D3;
+    }
 `;
 
 export const CardText = styled.p`
@@ -56,9 +66,9 @@ export const CardText = styled.p`
     text-align: center;
 `;
 
-export const CardLink = styled.a`
-    text-decoration: underline;
-    color: #0176D3;
+export const CardRM = styled.p`
+    color: #000;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     cursor: pointer;
 `;

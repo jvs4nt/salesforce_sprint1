@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     return (
             <NavbarStyle className="navbar">
                 <div>
-                <Img src="https://login.salesforce.com/img/logo214.svg" alt="Logo da empresa" />
+                <Img onClick={handleHome} src="https://login.salesforce.com/img/logo214.svg" alt="Logo da empresa" />
                 </div>
                 <div>
                 <Options className="navbar-nav">

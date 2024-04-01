@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Card, CardBox, CardImage, CardLink, CardText, MainBox, MainSection, MainText } from './Team.style';
+import { Card, CardBox, CardImage, CardRM, CardText, MainBox, MainSection, MainText } from './Team.style';
 import profile from './../../assets/profile-pic.jpeg';
 import profileWill from './../../assets/profilewill.jpeg'
 import profileRyan from './../../assets/profileRyan.jpeg'
@@ -16,21 +16,21 @@ const Team: React.FC = () => {
                     <CardImage src={profile}/>
                     <CardBox>
                         <CardText>João Santos</CardText>
-                        <CardLink>LinkedIn</CardLink>
+                        <CardRM>RM554328</CardRM>
                     </CardBox>
                 </Card>
                 <Card>
                     <CardImage src={profileWill}/>
                     <CardBox>
                         <CardText>Willian Daniel</CardText>
-                        <CardLink>LinkedIn</CardLink>
+                        <CardRM>RM554328</CardRM>
                     </CardBox>
                 </Card>
                 <Card>
                     <CardImage src={profileRyan}/>
                     <CardBox>
                         <CardText>Ryan Azanha</CardText>
-                        <CardLink>LinkedIn</CardLink>
+                        <CardRM>RM554328</CardRM>
                     </CardBox>
                 </Card>
                 </MainBox>

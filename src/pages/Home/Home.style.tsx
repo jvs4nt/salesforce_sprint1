@@ -94,6 +94,11 @@ export const Card = styled.div`
     margin: 0 auto;
     margin-top: 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    &:hover {
+        border: 1px solid #0176D3;
+    }
 `;
 
 export const CardBox = styled.div`
@@ -102,6 +107,7 @@ export const CardBox = styled.div`
 
 export const CardImage = styled.img`
     width: 100%;
+    padding: 5px;
     rounded: 0px;
 `;
 

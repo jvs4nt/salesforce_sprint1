@@ -10,7 +10,7 @@ export const NavbarStyle = styled.div`
     padding: 5px 40px;
     border-bottom: 3px solid #00A1E0;
     font-size: 1rem;
-    height: 6vh;
+    height: 7vh;
 `;
 
 export const Options = styled.nav`
@@ -25,10 +25,17 @@ export const Link = styled.a`
     cursor: pointer;
     color: #000;
     font-weight: 600;
+    font-size: 1.2rem;
+    transition: 0.3s;
+
+    &:hover {
+        color: #00A1E0;
+    }
 `;
 
 export const Img = styled.img`
-    width: 3.5rem;
+    width: 4.5rem;
     margin-top: 5px;
+    cursor: pointer;
 
 `;

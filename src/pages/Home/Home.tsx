@@ -5,6 +5,7 @@ import card1 from './../../assets/card1.png';
 import card3 from './../../assets/card3.png';
 
 const Home: React.FC = () => {
+
     return (
         <>
         <Navbar />
