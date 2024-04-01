@@ -23,14 +23,14 @@ const Team: React.FC = () => {
                     <CardImage src={profileWill}/>
                     <CardBox>
                         <CardText>Willian Daniel</CardText>
-                        <CardRM>RM554328</CardRM>
+                        <CardRM>RM552671</CardRM>
                     </CardBox>
                 </Card>
                 <Card>
                     <CardImage src={profileRyan}/>
                     <CardBox>
                         <CardText>Ryan Azanha</CardText>
-                        <CardRM>RM554328</CardRM>
+                        <CardRM>RM553324</CardRM>
                     </CardBox>
                 </Card>
                 </MainBox>
