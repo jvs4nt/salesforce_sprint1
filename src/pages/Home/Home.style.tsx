@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const MainSection = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     height: 95vh;
     background-color: white;
 `;
@@ -84,4 +84,21 @@ export const SecondaryBox = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 5rem;
+`;
+
+export const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+`;
+
+export const CardImage = styled.img`
+    width: 17rem;
+    margin-bottom: 20px;
 `;

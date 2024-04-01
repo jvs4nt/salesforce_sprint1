@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Box1, Box2, Button, ButtonDiv, Img, MainBox, MainSection, SecButton } from './Home.style';
+import { Box1, Box2, Button, ButtonDiv, Card, CardImage, Img, MainBox, MainSection, SecButton, SecondaryBox } from './Home.style';
 
 const Home: React.FC = () => {
     return (
@@ -23,6 +23,17 @@ const Home: React.FC = () => {
                     <Img src="https://i.ibb.co/VgLY7pt/Salesforce1.png" alt="Logo da empresa" />
                 </Box2>
             </MainBox>
+            <SecondaryBox>
+                <Card>
+                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                </Card>
+                <Card>
+                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                </Card>
+                <Card>
+                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                </Card>
+            </SecondaryBox>
         </MainSection>
         </>
     );
