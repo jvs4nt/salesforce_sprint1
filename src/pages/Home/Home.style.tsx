@@ -81,7 +81,6 @@ export const SecButton = styled.button`
 
 export const SecondaryBox = styled.div`
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     margin-top: 5rem;
 `;
@@ -89,16 +88,30 @@ export const SecondaryBox = styled.div`
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 30%;
-    border: 1px solid gray;
-    border-radius: 5px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+`;
+
+export const CardBox = styled.div`
+    padding: 20px;
 `;
 
 export const CardImage = styled.img`
-    width: 17rem;
+    width: 100%;
     margin-bottom: 20px;
+`;
+
+export const CardText = styled.p`
+    color: #032D60;
+`;
+
+export const CardLink = styled.a`
+    text-decoration: underline;
+    color: #0176D3;
+    margin-bottom: 20px;
+    cursor: pointer;
 `;

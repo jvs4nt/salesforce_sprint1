@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Box1, Box2, Button, ButtonDiv, Card, CardImage, Img, MainBox, MainSection, SecButton, SecondaryBox } from './Home.style';
+import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Img, MainBox, MainSection, SecButton, SecondaryBox } from './Home.style';
 
 const Home: React.FC = () => {
     return (
@@ -25,13 +25,25 @@ const Home: React.FC = () => {
             </MainBox>
             <SecondaryBox>
                 <Card>
-                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                    <CardImage src='https://i.ibb.co/DthS4fF/Link-Fortalec-a-a-empresa-do-seu-cliente-com-dados-unificados-e-em-tempo-real-data-cloud-card-png.png'/>
+                    <CardBox>
+                        <CardText>Temos diversos produtos disponíveis para atender suas necessidades</CardText>
+                        <CardLink>Conheça os produtos</CardLink>
+                    </CardBox>
                 </Card>
                 <Card>
                     <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                    <CardBox>
+                        <CardText>Nossa equipe é determinada e mantemos o foco na exatidão e garantia</CardText>
+                        <CardLink>Conheça a equipe</CardLink>
+                    </CardBox>
                 </Card>
                 <Card>
-                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                    <CardImage src='https://i.ibb.co/WBZg8y6/Link-Marketing-no-Whats-App-O-que-e-e-como-integrar-a-sua-estrate-gia-de-marketing-digital-php-mk-wh.png'/>
+                    <CardBox>
+                        <CardText>Tiramos todas as suas dúvidas através do nosso contato 24h</CardText>
+                        <CardLink>Entre em contato conosco</CardLink>
+                    </CardBox>
                 </Card>
             </SecondaryBox>
         </MainSection>
