@@ -41,6 +41,10 @@ export const Card = styled.div`
     &:hover {
         border: 1px solid #0176D3;
     }
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
 export const CardBox = styled.div`
