@@ -18,6 +18,10 @@ export const Options = styled.nav`
   width: 10%;
   justify-content: space-between;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 `;
 
 export const Link = styled.a`
