@@ -34,7 +34,7 @@ export const Link = styled.a`
 `;
 
 export const Img = styled.img`
-    width: 4.5rem;
+    width: 3.7rem;
     margin-top: 5px;
     cursor: pointer;
 
