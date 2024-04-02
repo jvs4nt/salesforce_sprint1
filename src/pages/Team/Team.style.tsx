@@ -24,6 +24,10 @@ export const MainText = styled.h1`
     color: #032D60;
     margin-top: 5%;
     margin-bottom: 5%;
+
+    @media (max-width: 768px) {
+        font-size: 1.7rem;
+    }
 `;
 
 export const Card = styled.div`
