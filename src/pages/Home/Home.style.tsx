@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const MainSection = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 120vh;
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -15,8 +16,6 @@ export const MainSection = styled.div`
 export const MainBox = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
     margin-top: 5rem;
     margin-left: 5rem;
 
