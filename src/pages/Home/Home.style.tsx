@@ -15,6 +15,7 @@ export const MainSection = styled.div`
 export const MainBox = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     margin-top: 5rem;
     margin-left: 5rem;
