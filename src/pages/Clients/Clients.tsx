@@ -6,6 +6,7 @@ import DataTable from 'react-data-table-component';
 
 const Clients: React.FC = () => {
     const [clients, setClients] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     //colunas da tabela
     const columns = [
@@ -63,9 +64,11 @@ const Clients: React.FC = () => {
         axios.get('https://25ad82ed-2de0-4571-aadd-99894d48ca7c-00-3mmrabe63art8.spock.replit.dev/clientes')
             .then(response => {
                 setClients(response.data);
+                setLoading(false);
             })
             .catch(error => {
                 console.error("Houve um erro ao buscar os dados dos clientes:", error);
+                setLoading(false);
             });
             console.log (clients);
     }, []);
@@ -82,6 +85,9 @@ const Clients: React.FC = () => {
                 pagination
                 fixedHeader
                 customStyles={customStyles}
+                progressPending={loading}
+                progressComponent={<div>Carregando...</div>}
+                noDataComponent={<div>Não há registros para exibir</div>}
                 />
             </TableBox>
         </MainSection>
