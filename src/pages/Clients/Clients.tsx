@@ -1,11 +1,64 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { MainSection } from './Clients.style';
+import { MainSection, TableBox } from './Clients.style';
 import Navbar from '../../components/Navbar/Navbar';
+import DataTable from 'react-data-table-component';
 
 const Clients: React.FC = () => {
     const [clients, setClients] = useState([]);
 
+    //colunas da tabela
+    const columns = [
+        {
+            name: 'ID',
+            selector: (row: any) => row.ID_CLIE,
+            sortable: true,
+        },
+        {
+            name: 'Nome',
+            selector: (row: any) => row.NOME_CLIE,
+            sortable: true,
+        },
+        {
+            name: 'Email',
+            selector: (row: any) => row.EMAIL_CLIE,
+            sortable: true,
+        },
+        {
+            name: 'CPF/CNPJ',
+            selector: (row: any) => row.CPF_CNPJ,
+            sortable: true,
+        }
+    ];
+
+    //estilização do datatable
+    const customStyles = {
+        rows: {
+            style: {
+                minHeight: '72px', // override the row height
+            }
+        },
+        headCells: {
+            style: {
+                fontSize: '18px',
+                fontWeight: 'bold',
+                paddingLeft: '16px',
+                paddingRight: '16px',
+                backgroundColor: '#032D60',
+                color: 'white',
+            },
+        },
+        cells: {
+            style: {
+                fontSize: '16px',
+                paddingLeft: '16px',
+                paddingRight: '16px',
+            },
+        },
+    };
+
+    //para funcionamento da tabela, é necessário que a API esteja rodando, para testes utilizei
+    //o replit como foi orientado, porém a API não está mais disponível. O código da API em python está no github :D
     useEffect(() => {
         axios.get('https://25ad82ed-2de0-4571-aadd-99894d48ca7c-00-3mmrabe63art8.spock.replit.dev/clientes')
             .then(response => {
@@ -22,26 +75,15 @@ const Clients: React.FC = () => {
         <Navbar/>
         <MainSection>
             <h1>Clientes</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>CPF/CNPJ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {clients.map((client: any) => (
-                        <tr key={client.ID_CLIE}>
-                            <td>{client.ID_CLIE}</td>
-                            <td>{client.NOME_CLIE}</td>
-                            <td>{client.EMAIL_CLIE}</td>
-                            <td>{client.CPF_CNPJ}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <TableBox>
+                <DataTable
+                columns={columns}
+                data={clients}
+                pagination
+                fixedHeader
+                customStyles={customStyles}
+                />
+            </TableBox>
         </MainSection>
         </>
     );

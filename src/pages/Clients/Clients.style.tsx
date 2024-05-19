@@ -4,7 +4,7 @@ export const MainSection = styled.div`
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    height: 95vh;
+    height: 90vh;
     background-color: white;
     align-items: center;
     padding: 5%;
@@ -29,5 +29,13 @@ export const MainText = styled.h1`
     @media (max-width: 768px) {
         font-size: 1.7rem;
     }
+`;
+
+export const TableBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    border: 1px solid #032D60;
 `;
 
