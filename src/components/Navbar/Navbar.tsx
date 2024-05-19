@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconImg, Img, Link, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
+import { Close, CloseDiv, IconImg, Img, Link, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
 import { useNavigate } from 'react-router-dom';
 import menuIcon from './../../assets/menu.png'
 
@@ -57,9 +57,9 @@ const Navbar: React.FC = () => {
             {isOpen && (
                 <MobileMenu>
                     <MobileBox>
-                        <div onClick={toggleMenu}>
-                            <p>X</p>
-                        </div>
+                        <CloseDiv onClick={toggleMenu}>
+                            <Close>x</Close>
+                        </CloseDiv>
                         <MobileLink onClick={handleHome} className="nav-link">Home</MobileLink>
                         <MobileLink onClick={handleClients} className="nav-link">Clientes</MobileLink>
                         <MobileLink onClick={handleTeam} className="nav-link">Equipe</MobileLink>

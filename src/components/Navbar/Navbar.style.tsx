@@ -106,3 +106,14 @@ export const IconImg = styled.img`
       display: none;
     }
 `;
+
+export const CloseDiv = styled.div`
+  width: 100%;
+`;
+
+export const Close = styled.p`
+  text-align: right;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+`;

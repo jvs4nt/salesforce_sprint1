@@ -10,6 +10,7 @@ export const MainSection = styled.div`
 
     @media (max-width: 768px) {
         min-height: 150vh;
+        min-width: 100vw;
     }
 `;
 
@@ -52,7 +53,8 @@ export const Box1 = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 80%;
+        width: 100%;
+        padding: 0 20px;
     }
 `;
 
