@@ -77,7 +77,7 @@ const Clients: React.FC = () => {
         <>
         <Navbar/>
         <MainSection>
-            <h1>Clientes</h1>
+            <h1>Clientes cadastrados no sistema:</h1>
             <TableBox>
                 <DataTable
                 columns={columns}
