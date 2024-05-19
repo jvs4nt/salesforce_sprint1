@@ -21,7 +21,7 @@ export const Options = styled.nav`
   gap: 40px;
 
   @media (max-width: 768px) {
-    gap: 20px;
+    display: none;
   }
 `;
 
@@ -43,4 +43,66 @@ export const Img = styled.img`
     margin-top: 5px;
     cursor: pointer;
 
+`;
+
+export const MobileMenu = styled.div`
+    display: none;
+    cursor: pointer;
+    color: black;
+    @media (max-width: 768px) {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        width: 120px;
+        height: 150px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    border: 1px solid #032D60;
+`;
+
+export const MobileBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+`;
+
+export const MobileLink = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: 0.3s;
+
+    &:hover {
+        color: #00A1E0;
+    }
+`;
+
+export const Menu = styled.div`
+
+    display: none;
+    cursor: pointer;
+    color: black;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 20px;
+        margin-left: auto;
+    }
+`;
+
+export const IconImg = styled.img`
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
 `;
