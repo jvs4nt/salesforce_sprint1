@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Team from "./pages/Team/Team";
+import Clients from "./pages/Clients/Clients";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
     </BrowserRouter>
   );
