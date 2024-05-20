@@ -122,7 +122,7 @@ export const SecondaryBox = styled.div`
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 28%;
     border: none;
     border-radius: 10px;
     margin: 0 auto;
