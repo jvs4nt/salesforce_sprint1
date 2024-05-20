@@ -13,6 +13,10 @@ export const MainSection = styled.div`
 export const Title = styled.h1`
     font-size: 2.5rem;
     color: #032D60;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const MainBox = styled.div`
