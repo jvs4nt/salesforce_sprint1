@@ -1,9 +1,14 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Img, MainBox, MainSection, SecButton, SecondaryBox, TextBox, ThirdBox } from './Home.style';
+import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Element, ElementImage, ElementP, ElementText, ElementsBox, Img, MainBox, MainSection, SecButton, SecondaryBox, TextBox, ThirdBox } from './Home.style';
 import card1 from './../../assets/card1.png';
 import card3 from './../../assets/card3.png';
 import { useNavigate } from 'react-router-dom';
+import mainimg from './../../assets/mainimg.png';
+import element1 from './../../assets/element1.png';
+import element2 from './../../assets/element2.png';
+import element3 from './../../assets/element3.png';
+import element4 from './../../assets/element4.png';
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
@@ -33,7 +38,7 @@ const Home: React.FC = () => {
                 </ButtonDiv>  
                 </Box1>
                 <Box2>
-                    <Img src="https://i.ibb.co/VgLY7pt/Salesforce1.png" alt="Logo da empresa" />
+                    <Img src={mainimg} alt="Logo da empresa" />
                 </Box2>
             </MainBox>
             <SecondaryBox>
@@ -63,6 +68,28 @@ const Home: React.FC = () => {
                 <TextBox>
                     <h1>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez. </h1>
                 </TextBox>
+                <ElementsBox>
+                    <Element>
+                        <ElementImage src={element1} />
+                        <ElementText>Pequenas empresas</ElementText>
+                        <ElementP>Venda de forma mais inteligente e forneça suporte mais rápido em um único aplicativo.</ElementP>
+                    </Element>
+                    <Element>
+                        <ElementImage src={element2} />
+                        <ElementText>Vendas</ElementText>
+                        <ElementP>Feche mais negócios e acelere o crescimento com o CRM nº1.</ElementP>
+                    </Element>
+                    <Element>
+                        <ElementImage src={element3} />
+                        <ElementText>Atendimento</ElementText>
+                        <ElementP>Gaste menos com serviços escaláveis que os clientes adoram.</ElementP>
+                    </Element>
+                    <Element>
+                        <ElementImage src={element4} />
+                        <ElementText>Veja todos os produtos</ElementText>
+                        <ElementP>Descubra como nossas ofertas do Customer 360 proporcionam sucesso imediato.</ElementP>
+                    </Element>
+                </ElementsBox>
             </ThirdBox>
         </MainSection>
         </>

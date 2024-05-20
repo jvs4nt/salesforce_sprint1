@@ -7,8 +7,9 @@ export const MainSection = styled.div`
     min-height: 120vh;
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    padding-top: 7%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1150px) {
         min-height: 150vh;
         min-width: 100vw;
     }
@@ -16,12 +17,11 @@ export const MainSection = styled.div`
 
 export const MainBox = styled.div`
     display: flex;
-    justify-content: space-between;
     margin-top: 5rem;
     margin-left: 5rem;
     width: 90%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1150px) {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
@@ -30,11 +30,10 @@ export const MainBox = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-    @media (max-width: 900px) {
+    border-radius: 20px;
+    margin-top: 3rem;
+    align-self: center;
+    @media (max-width: 1150px) {
         display: none;
     }
 `;
@@ -53,7 +52,7 @@ export const Box1 = styled.div`
         margin: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1150px) {
         width: 100%;
         padding: 0 20px;
 
@@ -134,7 +133,6 @@ export const ThirdBox = styled.div`
 `;
 
 export const TextBox = styled.div`
-    width: 100vh;
     text-align: center;
     margin: 0 auto;
 
@@ -150,11 +148,50 @@ export const ElementsBox = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10rem;
 
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
     }
+`;
+
+export const Element = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+`;
+
+export const ElementImage = styled.img`
+    width: 80%;
+    margin-bottom: 20px;
+`;
+
+export const ElementText = styled.h3`
+    color: #032D60;
+`;
+
+export const ElementP = styled.p`
+    color: #032D60;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `;
 
 export const Card = styled.div`
@@ -169,7 +206,7 @@ export const Card = styled.div`
     transition: 0.3s;
 
     &:hover {
-        border: 1px solid #0176D3;
+        opacity: 0.8;
     }
 
     @media (max-width: 768px) {
@@ -184,7 +221,7 @@ export const CardBox = styled.div`
 export const CardImage = styled.img`
     width: 100%;
     padding: 5px;
-    rounded: 0px;
+    border-radius: 20px;
     cursor: pointer;
 `;
 
