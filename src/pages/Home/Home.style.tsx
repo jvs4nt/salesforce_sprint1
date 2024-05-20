@@ -135,6 +135,8 @@ export const ThirdBox = styled.div`
 export const TextBox = styled.div`
     text-align: center;
     margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 
     @media (max-width: 768px) {
         width: 80%;
