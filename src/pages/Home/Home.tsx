@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Img, MainBox, MainSection, SecButton, SecondaryBox } from './Home.style';
+import { Box1, Box2, Button, ButtonDiv, Card, CardBox, CardImage, CardLink, CardText, Img, MainBox, MainSection, SecButton, SecondaryBox, TextBox, ThirdBox } from './Home.style';
 import card1 from './../../assets/card1.png';
 import card3 from './../../assets/card3.png';
 import { useNavigate } from 'react-router-dom';
@@ -59,6 +59,11 @@ const Home: React.FC = () => {
                     </CardBox>
                 </Card>
             </SecondaryBox>
+            <ThirdBox>
+                <TextBox>
+                    <h1>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez. </h1>
+                </TextBox>
+            </ThirdBox>
         </MainSection>
         </>
     );

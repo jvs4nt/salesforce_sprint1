@@ -60,7 +60,7 @@ export const MobileMenu = styled.div`
         flex-direction: column;
         width: 120px;
         height: 150px;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
     }

@@ -119,6 +119,44 @@ export const SecondaryBox = styled.div`
     }
 `;
 
+export const ThirdBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+
+    h1 {
+        font-size: 2.5rem;
+        color: #032D60;
+        margin-bottom: 20px;
+    }
+`;
+
+export const TextBox = styled.div`
+    width: 100vh;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        h1 {
+            font-size: 1.7rem;
+        }
+    }
+`;
+
+export const ElementsBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+`;
+
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
