@@ -7,6 +7,7 @@ export const MainSection = styled.div`
     height: 95vh;
     background-color: white;
     align-items: center;
+    padding-top: 50px;
 `;
 
 export const MainBox = styled.div`

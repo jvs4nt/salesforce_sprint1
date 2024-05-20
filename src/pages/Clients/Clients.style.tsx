@@ -13,6 +13,7 @@ export const MainSection = styled.div`
 export const Title = styled.h1`
     font-size: 2.5rem;
     color: #032D60;
+    margin-top: 50px;
 
     @media (max-width: 768px) {
         font-size: 1.5rem;

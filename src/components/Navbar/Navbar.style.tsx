@@ -12,10 +12,10 @@ export const NavbarStyle = styled.div`
     border-bottom: 0.2px solid #00A1E0;
     font-size: 1rem;
     height: 7vh;
-    position: fixed; /* Adiciona fixação da Navbar */
-    top: 0; /* Posiciona a Navbar no topo */
-    width: 100%; /* Garante que a Navbar ocupe toda a largura da tela */
-    z-index: 1000; /* Garante que a Navbar fique acima de outros elementos */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
 `;
 
 export const Options = styled.nav`
@@ -53,6 +53,7 @@ export const MobileMenu = styled.div`
     display: none;
     cursor: pointer;
     color: black;
+    z-index: 1100;
     @media (max-width: 768px) {
         display: flex;
         background-color: white;
