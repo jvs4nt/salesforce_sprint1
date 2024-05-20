@@ -10,6 +10,11 @@ export const MainSection = styled.div`
     padding: 5%;
 `;
 
+export const Title = styled.h1`
+    font-size: 2.5rem;
+    color: #032D60;
+`;
+
 export const MainBox = styled.div`
     display: flex;
     background-color: white;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { MainSection, TableBox } from './Clients.style';
+import { MainSection, TableBox, Title } from './Clients.style';
 import Navbar from '../../components/Navbar/Navbar';
 import DataTable from 'react-data-table-component';
 
@@ -77,7 +77,7 @@ const Clients: React.FC = () => {
         <>
         <Navbar/>
         <MainSection>
-            <h1>Clientes cadastrados no sistema:</h1>
+            <Title>Painel ADMIN - Clientes cadastrados:</Title>
             <TableBox>
                 <DataTable
                 columns={columns}
