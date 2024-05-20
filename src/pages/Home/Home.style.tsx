@@ -112,7 +112,7 @@ export const SecondaryBox = styled.div`
     margin-top: 5rem;
     margin-bottom: 5rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1050px) {
         flex-direction: column;
         align-items: center;
     }
@@ -154,7 +154,7 @@ export const ElementsBox = styled.div`
     padding-right: 5%;
     margin-bottom: 10rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1150px) {
         flex-direction: column;
         align-items: center;
     }
