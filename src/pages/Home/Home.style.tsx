@@ -31,7 +31,7 @@ export const MainBox = styled.div`
 export const Img = styled.img`
     width: 100%;
     border-radius: 20px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     align-self: center;
     @media (max-width: 1150px) {
         display: none;
