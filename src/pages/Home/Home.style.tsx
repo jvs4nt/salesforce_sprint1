@@ -19,6 +19,7 @@ export const MainBox = styled.div`
     justify-content: space-between;
     margin-top: 5rem;
     margin-left: 5rem;
+    width: 90%;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -33,7 +34,7 @@ export const Img = styled.img`
     margin: 0 auto;
     margin-bottom: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         display: none;
     }
 `;
@@ -46,15 +47,20 @@ export const Box1 = styled.div`
     margin-bottom: 20px;
 
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: 'Roboto', sans-serif;
         color: #032D60;
         margin: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         width: 100%;
         padding: 0 20px;
+
+        h1 {
+            font-size: 1.7rem;
+        
+        }
     }
 `;
 
@@ -141,6 +147,7 @@ export const CardImage = styled.img`
     width: 100%;
     padding: 5px;
     rounded: 0px;
+    cursor: pointer;
 `;
 
 export const CardText = styled.p`

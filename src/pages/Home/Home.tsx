@@ -12,6 +12,10 @@ const Home: React.FC = () => {
         navigate('/team');
     }
 
+    function handleExternalLink(url: string) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
     return (
         <>
         <Navbar />
@@ -34,21 +38,21 @@ const Home: React.FC = () => {
             </MainBox>
             <SecondaryBox>
                 <Card>
-                    <CardImage src={card1}/>
+                    <CardImage src={card1}  onClick={() => handleExternalLink('https://www.salesforce.com/br/products/')}/>
                     <CardBox>
                         <CardText>Temos diversos produtos disponíveis para atender suas necessidades</CardText>
                         <CardLink href='https://www.salesforce.com/br/products/' target='_blank'>Conheça os produtos</CardLink>
                     </CardBox>
                 </Card>
                 <Card>
-                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png'/>
+                    <CardImage src='https://i.ibb.co/Y0KWH0n/div-card-image-wrapper.png' onClick={handleTeam}/>
                     <CardBox>
                         <CardText>Nossa equipe é determinada e mantemos o foco na exatidão e garantia</CardText>
                         <CardLink onClick={handleTeam}>Conheça a equipe</CardLink>
                     </CardBox>
                 </Card>
                 <Card>
-                    <CardImage src={card3}/>
+                    <CardImage src={card3}  onClick={() => handleExternalLink('https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9')}/>
                     <CardBox>
                         <CardText>Tiramos todas as suas dúvidas através do nosso contato 24h</CardText>
                         <CardLink href='https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9' target='_blank'>Entre em contato conosco</CardLink>
