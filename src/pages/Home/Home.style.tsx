@@ -177,10 +177,11 @@ export const Element = styled.div`
     @media (max-width: 1150px) {
         width: 80%;
         margin-bottom: 20px;
-        border: 0.5px solid grey;
+        border: 0.5px solid #f0f0f0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
         &:hover {
-            border: 0.5px solid #f0f0f0;
+            border: 0.5px solid grey;
         }
     }
 `;
