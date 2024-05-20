@@ -174,7 +174,7 @@ export const Element = styled.div`
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1150px) {
         width: 80%;
         margin-bottom: 20px;
     }
@@ -211,7 +211,7 @@ export const Card = styled.div`
         opacity: 0.8;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1050px) {
         width: 80%;
     }
 `;
