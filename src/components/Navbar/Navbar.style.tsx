@@ -9,9 +9,13 @@ export const NavbarStyle = styled.div`
     background-color: #f7f9fa;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding: 5px 40px;
-    border-bottom: 3px solid #00A1E0;
+    border-bottom: 0.2px solid #00A1E0;
     font-size: 1rem;
     height: 7vh;
+    position: fixed; /* Adiciona fixação da Navbar */
+    top: 0; /* Posiciona a Navbar no topo */
+    width: 100%; /* Garante que a Navbar ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que a Navbar fique acima de outros elementos */
 `;
 
 export const Options = styled.nav`
@@ -28,8 +32,8 @@ export const Options = styled.nav`
 export const Link = styled.a`
     text-decoration: none;
     cursor: pointer;
-    color: #000;
-    font-weight: 600;
+    color: #032D60;
+    font-weight: 500;
     font-size: 1.2rem;
     transition: 0.3s;
 
