@@ -177,12 +177,21 @@ export const Element = styled.div`
     @media (max-width: 1150px) {
         width: 80%;
         margin-bottom: 20px;
+        border: 0.5px solid grey;
+
+        &:hover {
+            border: 0.5px solid #f0f0f0;
+        }
     }
 `;
 
 export const ElementImage = styled.img`
     width: 80%;
     margin-bottom: 20px;
+
+    @media (max-width: 1150px) {
+        width: 50%;
+    }
 `;
 
 export const ElementText = styled.h3`
