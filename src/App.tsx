@@ -12,7 +12,7 @@ export default function App() {
       integrationID: "a7d4e05f-fdcc-493d-b822-d7858d959e52", // The ID of this integration.
       region: "au-syd", // The region your integration is hosted in.
       serviceInstanceID: "8454b45b-de5c-46d7-92a6-8e785f3d443b", // The ID of your service instance.
-      onLoad: async (instance) => { await instance.render(); }
+      onLoad: async (instance: any) => { await instance.render(); }
     };
 
     setTimeout(() => {
